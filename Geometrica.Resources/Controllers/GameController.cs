@@ -3,8 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
+using Geometrica.Auth.Resources.Models;
+using Geometrica.Auth.Resources.Repository;
 using Geometrica.Resources.Models;
-using Geometrica.Resources.Repository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,14 +24,14 @@ namespace Geometrica.Resources
         }
 
         [HttpGet("countries")]
-        [Authorize]
-        public IEnumerable<Country> GetCountry()
+        public IEnumerable<Country> GetCountries()
         {
-            return repository.GetCountry();
+            return repository.GetCountries();
         }
         
 
         [HttpGet("{userId}/games")]
+        [Authorize]
         public IEnumerable<Game> GetUserGames(int userId)
         {
             return repository.GetUserGames(userId);

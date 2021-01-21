@@ -1,16 +1,16 @@
-﻿using Geometrica.Resources.Models;
+﻿using Geometrica.Auth.Resources.Models;
+using Geometrica.Resources.Models;
 using Microsoft.EntityFrameworkCore;
 
-
-namespace Geometrica.Resources.Repository
+namespace Geometrica.Auth.Resources.Repository
 {
-    public partial class geometricaContext : DbContext
+    public partial class GeometricaContext : DbContext
     {
-        public geometricaContext()
+        public GeometricaContext()
         {
         }
 
-        public geometricaContext(DbContextOptions<geometricaContext> options)
+        public GeometricaContext(DbContextOptions<GeometricaContext> options)
             : base(options)
         {
         }

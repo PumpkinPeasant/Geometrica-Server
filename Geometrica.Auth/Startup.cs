@@ -25,7 +25,7 @@ namespace Geometrica.Auth
             var authOptionsConfiguration = Configuration.GetSection("Auth");
             services.Configure<AuthOptions>(authOptionsConfiguration);
             var connectionString = Configuration.GetConnectionString("DefaultConnection");
-            services.AddDbContext<geometricaContext>(options =>
+            services.AddDbContext<GeometricaContext>(options =>
             {
                 options.UseNpgsql(connectionString,
                     opts => opts.CommandTimeout((int) TimeSpan.FromMinutes(10).TotalSeconds));

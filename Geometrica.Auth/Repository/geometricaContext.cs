@@ -5,13 +5,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Geometrica.Auth.Repository
 {
-    public partial class geometricaContext : DbContext
+    public partial class GeometricaContext : DbContext
     {
-        public geometricaContext()
-        {
-        }
 
-        public geometricaContext(DbContextOptions<geometricaContext> options)
+        public GeometricaContext(DbContextOptions<GeometricaContext> options)
             : base(options)
         {
         }
