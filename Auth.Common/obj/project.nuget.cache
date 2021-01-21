@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "JfRGB+MbEdc0j9LOjOQtxR/E1lKgY7rBAmF9PWbqpu6ErCIZaTH/XIfhyNb4jhqNMim/bFu9oBNeWuJ2HT1rEw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\grib\\RiderProjects\\Geometrica-Server\\Auth.Common\\Auth.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\grib\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\grib\\.nuget\\packages\\microsoft.identitymodel.logging\\6.7.1\\microsoft.identitymodel.logging.6.7.1.nupkg.sha512",
+    "C:\\Users\\grib\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.7.1\\microsoft.identitymodel.tokens.6.7.1.nupkg.sha512",
+    "C:\\Users\\grib\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
