@@ -1,7 +1,8 @@
+using Geometrica.Resources;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace Geometrica.Resources
+namespace Geometrica.Auth.Resources
 {
     public class Program
     {

@@ -1,19 +1,21 @@
 using System.Collections.Generic;
 using System.Linq;
+using Geometrica.Auth.Resources.Models;
+using Geometrica.Resources;
 using Geometrica.Resources.Models;
 
-namespace Geometrica.Resources.Repository
+namespace Geometrica.Auth.Resources.Repository
 {
     public class DatabaseRepository: IRepository
     {
-        private readonly geometricaContext ctx;
+        private readonly GeometricaContext ctx;
 
-        public DatabaseRepository(geometricaContext ctx)
+        public DatabaseRepository(GeometricaContext ctx)
         {
             this.ctx = ctx;
         }
         
-        public IEnumerable<Country> GetCountry()
+        public IEnumerable<Country> GetCountries()
         {
             return ctx.Countries;
         }
@@ -46,7 +48,7 @@ namespace Geometrica.Resources.Repository
             return ctx.Games;
         }
 
-        public IEnumerable<Player> getPlayers()
+        public IEnumerable<Player> GetPlayers()
         {
             return ctx.Players;
         }

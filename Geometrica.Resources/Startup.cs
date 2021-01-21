@@ -1,6 +1,6 @@
 using System;
 using Auth.Common;
-using Geometrica.Resources.Repository;
+using Geometrica.Auth.Resources.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -10,7 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Geometrica.Resources
+namespace Geometrica.Auth.Resources
 {
     public class Startup
     {
@@ -26,7 +26,7 @@ namespace Geometrica.Resources
         {
             var authOptionsConfiguration = Configuration.GetSection("Auth").Get<AuthOptions>();
             var connectionString = Configuration.GetConnectionString("DefaultConnection");
-            services.AddDbContext<geometricaContext>(options =>
+            services.AddDbContext<GeometricaContext>(options =>
             {
                 options.UseNpgsql(connectionString,
                     opts => opts.CommandTimeout((int) TimeSpan.FromMinutes(10).TotalSeconds));

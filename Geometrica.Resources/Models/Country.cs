@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Geometrica.Resources.Models;
 
 #nullable disable
 
-namespace Geometrica.Resources.Models
+namespace Geometrica.Auth.Resources.Models
 {
-    public partial class Country
+    public sealed partial class Country
     {
+        private ICollection<Player> players;
+
         public Country()
         {
             Players = new HashSet<Player>();
@@ -20,6 +22,10 @@ namespace Geometrica.Resources.Models
         public int? Numcode { get; set; }
         public int Phonecode { get; set; }
 
-        public virtual ICollection<Player> Players { get; set; }
+        public ICollection<Player> Players
+        {
+            get => players;
+            set => players = value;
+        }
     }
 }

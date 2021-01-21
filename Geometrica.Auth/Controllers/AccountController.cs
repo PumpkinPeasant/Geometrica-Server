@@ -25,10 +25,15 @@ namespace Geometrica.Auth.Controllers
         }
 
         [HttpPost("signUp")]
-        public Player SignUp(Player player)
+        public IActionResult SignUp(Player player)
         {
-            return repository.SignUp(player);
-            
+            if (repository.SignUp(player) is null) return Unauthorized();
+            var token = GenerateJWT(player);
+            return Ok(new
+            {
+                access_token = token, player
+            });
+
         }
         [HttpPost("signIn")]
         public IActionResult SignIn([FromBody]User request)
@@ -38,7 +43,7 @@ namespace Geometrica.Auth.Controllers
             var token = GenerateJWT(user);
             return Ok(new
             {
-                access_token = token
+                access_token = token, user
             });
         }
         
@@ -46,7 +51,7 @@ namespace Geometrica.Auth.Controllers
         {
             var authParams = options.Value;
             var secretKey = authParams.GetSymmetricSecurityKey();
-            var credetianals = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
+            var credentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
             var claims = new List<Claim>()
             {
                 new (JwtRegisteredClaimNames.Email, player.Email),
@@ -57,7 +62,7 @@ namespace Geometrica.Auth.Controllers
                 authParams.Audience,
                 claims,
                 expires: DateTime.Now.AddSeconds(authParams.TokenLifetime),
-                signingCredentials: credetianals
+                signingCredentials: credentials
             );
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
