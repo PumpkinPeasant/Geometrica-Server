@@ -43,14 +43,59 @@ namespace Geometrica.Auth.Resources.Repository
             return ctx.Games.Where(g => g.Uid == idUser);
         }
 
-        public IEnumerable<Game> GetAllGames()
+        public IEnumerable<GameWithPlayersNames> GetAllGames()
         {
-            return ctx.Games;
+            return ctx.Games
+                .OrderByDescending(game => game.Rightguesses)
+                .Select((game) =>
+                    new GameWithPlayersNames(game, ctx.Players.Single(p => p.Uid == game.Uid).Nickname));
         }
 
         public IEnumerable<Player> GetPlayers()
         {
             return ctx.Players;
+        }
+
+        public int DeletePlayer(int playerId, User user)
+        {
+            if (!ctx.Players.Any(p => p.Uid == playerId && p.Email == user.email && p.Password == user.password)) return 0;
+            var player = new Player() {Uid = playerId, Email = user.email, Password = user.password};
+            ctx.Players.Attach(player);
+            var games = ctx.Games.Where(game => game.Uid == playerId);
+            ctx.Games.AttachRange(games);
+            ctx.Games.RemoveRange(games);
+            ctx.Players.Attach(player);
+            ctx.Players.Remove(player);
+            return ctx.SaveChanges();
+        }
+
+        public int UpdatePlayer(Player player)
+        {
+            ctx.Players.Attach(player);
+            ctx.Players.Update(player);
+            return ctx.SaveChanges();
+        }
+
+        public IEnumerable<string> FindFriends(string playerName)
+        {
+            return ctx.Players.
+                Where(player =>
+                    player.Nickname.Contains(playerName) || playerName.Contains(player.Nickname))
+                .Select(player => player.Nickname);
+        }
+
+        public int DeleteGame(int userId, int gameId, User user)
+        {
+            if (!ctx.Players.Any(p => p.Uid == userId && p.Email == user.email && p.Password == user.password)) return 0;
+            var game = new Game() {Gameid = gameId, Uid = userId};
+            ctx.Games.Attach(game);
+            ctx.Games.Remove(game);
+            return ctx.SaveChanges();
+        }
+
+        private bool IsPlayer(Player p, int userId, User user)
+        {
+            return p.Uid == userId && p.Email == user.email && p.Password == user.password;
         }
     }
 }

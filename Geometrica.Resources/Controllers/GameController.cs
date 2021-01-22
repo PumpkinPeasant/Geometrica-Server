@@ -22,16 +22,15 @@ namespace Geometrica.Resources
         {
             this.repository = repository;
         }
-        
-
         [HttpGet("{userId}/games")]
         [Authorize]
         public IEnumerable<Game> GetUserGames(int userId)
         {
             return repository.GetUserGames(userId);
         }
+        
         [HttpGet("games")]
-        public IEnumerable<Game> GetAllGames()
+        public IEnumerable<GameWithPlayersNames> GetAllGames()
         {
             return repository.GetAllGames();
         }

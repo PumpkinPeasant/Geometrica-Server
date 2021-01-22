@@ -13,12 +13,12 @@ namespace Geometrica.Auth.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class AccountController : Controller
+    public class AuthController : Controller
     {
         private readonly IRepository repository;
         private readonly IOptions<AuthOptions> options;
         
-        public AccountController(IRepository repository, IOptions<AuthOptions> options)
+        public AuthController(IRepository repository, IOptions<AuthOptions> options)
         {
             this.repository = repository;
             this.options = options;
