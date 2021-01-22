@@ -7,6 +7,6 @@ namespace Geometrica.Auth.Repository
     {
         Player SignUp(Player player);
         Player SignIn(User user);
-        IEnumerable<Player> getPlayers();
+        IEnumerable<Player> GetPlayers();
     }
 }

@@ -22,12 +22,6 @@ namespace Geometrica.Resources
         {
             this.repository = repository;
         }
-
-        [HttpGet("countries")]
-        public IEnumerable<Country> GetCountries()
-        {
-            return repository.GetCountries();
-        }
         
 
         [HttpGet("{userId}/games")]
@@ -35,6 +29,11 @@ namespace Geometrica.Resources
         public IEnumerable<Game> GetUserGames(int userId)
         {
             return repository.GetUserGames(userId);
+        }
+        [HttpGet("games")]
+        public IEnumerable<Game> GetAllGames()
+        {
+            return repository.GetAllGames();
         }
     }
 }

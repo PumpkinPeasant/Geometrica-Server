@@ -32,7 +32,7 @@ namespace Geometrica.Auth.Repository
         {
             return ctx.Players.SingleOrDefault(p => p.Password == user.password && p.Email == user.email);
         }
-        public IEnumerable<Player> getPlayers()
+        public IEnumerable<Player> GetPlayers()
         {
             return ctx.Players;
         }

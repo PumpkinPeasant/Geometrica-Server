@@ -10,3 +10,15 @@ C:\Users\grib\RiderProjects\Geometrica-Server\Auth.Common\obj\Debug\net5.0\Auth.
 C:\Users\grib\RiderProjects\Geometrica-Server\Auth.Common\obj\Debug\net5.0\Auth.Common.dll
 C:\Users\grib\RiderProjects\Geometrica-Server\Auth.Common\obj\Debug\net5.0\ref\Auth.Common.dll
 C:\Users\grib\RiderProjects\Geometrica-Server\Auth.Common\obj\Debug\net5.0\Auth.Common.pdb
+C:\Users\79214\RiderProjects\Geometrica-Server\Auth.Common\bin\Debug\net5.0\Auth.Common.deps.json
+C:\Users\79214\RiderProjects\Geometrica-Server\Auth.Common\bin\Debug\net5.0\Auth.Common.dll
+C:\Users\79214\RiderProjects\Geometrica-Server\Auth.Common\bin\Debug\net5.0\ref\Auth.Common.dll
+C:\Users\79214\RiderProjects\Geometrica-Server\Auth.Common\bin\Debug\net5.0\Auth.Common.pdb
+C:\Users\79214\RiderProjects\Geometrica-Server\Auth.Common\obj\Debug\net5.0\Auth.Common.csprojAssemblyReference.cache
+C:\Users\79214\RiderProjects\Geometrica-Server\Auth.Common\obj\Debug\net5.0\Auth.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\79214\RiderProjects\Geometrica-Server\Auth.Common\obj\Debug\net5.0\Auth.Common.AssemblyInfoInputs.cache
+C:\Users\79214\RiderProjects\Geometrica-Server\Auth.Common\obj\Debug\net5.0\Auth.Common.AssemblyInfo.cs
+C:\Users\79214\RiderProjects\Geometrica-Server\Auth.Common\obj\Debug\net5.0\Auth.Common.csproj.CoreCompileInputs.cache
+C:\Users\79214\RiderProjects\Geometrica-Server\Auth.Common\obj\Debug\net5.0\Auth.Common.dll
+C:\Users\79214\RiderProjects\Geometrica-Server\Auth.Common\obj\Debug\net5.0\ref\Auth.Common.dll
+C:\Users\79214\RiderProjects\Geometrica-Server\Auth.Common\obj\Debug\net5.0\Auth.Common.pdb

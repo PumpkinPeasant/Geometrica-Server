@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\grib\\RiderProjects\\Geometrica-Server\\Geometrica.Auth\\Geometrica.Auth.csproj": {}
+    "C:\\Users\\79214\\RiderProjects\\Geometrica-Server\\Geometrica.Auth\\Geometrica.Auth.csproj": {}
   },
   "projects": {
-    "C:\\Users\\grib\\RiderProjects\\Geometrica-Server\\Auth.Common\\Auth.Common.csproj": {
+    "C:\\Users\\79214\\RiderProjects\\Geometrica-Server\\Auth.Common\\Auth.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\grib\\RiderProjects\\Geometrica-Server\\Auth.Common\\Auth.Common.csproj",
+        "projectUniqueName": "C:\\Users\\79214\\RiderProjects\\Geometrica-Server\\Auth.Common\\Auth.Common.csproj",
         "projectName": "Auth.Common",
-        "projectPath": "C:\\Users\\grib\\RiderProjects\\Geometrica-Server\\Auth.Common\\Auth.Common.csproj",
-        "packagesPath": "C:\\Users\\grib\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\grib\\RiderProjects\\Geometrica-Server\\Auth.Common\\obj\\",
+        "projectPath": "C:\\Users\\79214\\RiderProjects\\Geometrica-Server\\Auth.Common\\Auth.Common.csproj",
+        "packagesPath": "C:\\Users\\79214\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\79214\\RiderProjects\\Geometrica-Server\\Auth.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\grib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\79214\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,21 +60,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\grib\\RiderProjects\\Geometrica-Server\\Geometrica.Auth\\Geometrica.Auth.csproj": {
+    "C:\\Users\\79214\\RiderProjects\\Geometrica-Server\\Geometrica.Auth\\Geometrica.Auth.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\grib\\RiderProjects\\Geometrica-Server\\Geometrica.Auth\\Geometrica.Auth.csproj",
+        "projectUniqueName": "C:\\Users\\79214\\RiderProjects\\Geometrica-Server\\Geometrica.Auth\\Geometrica.Auth.csproj",
         "projectName": "Geometrica.Auth",
-        "projectPath": "C:\\Users\\grib\\RiderProjects\\Geometrica-Server\\Geometrica.Auth\\Geometrica.Auth.csproj",
-        "packagesPath": "C:\\Users\\grib\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\grib\\RiderProjects\\Geometrica-Server\\Geometrica.Auth\\obj\\",
+        "projectPath": "C:\\Users\\79214\\RiderProjects\\Geometrica-Server\\Geometrica.Auth\\Geometrica.Auth.csproj",
+        "packagesPath": "C:\\Users\\79214\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\79214\\RiderProjects\\Geometrica-Server\\Geometrica.Auth\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\grib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\79214\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,8 +88,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\grib\\RiderProjects\\Geometrica-Server\\Auth.Common\\Auth.Common.csproj": {
-                "projectPath": "C:\\Users\\grib\\RiderProjects\\Geometrica-Server\\Auth.Common\\Auth.Common.csproj"
+              "C:\\Users\\79214\\RiderProjects\\Geometrica-Server\\Auth.Common\\Auth.Common.csproj": {
+                "projectPath": "C:\\Users\\79214\\RiderProjects\\Geometrica-Server\\Auth.Common\\Auth.Common.csproj"
               }
             }
           }
@@ -161,7 +161,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

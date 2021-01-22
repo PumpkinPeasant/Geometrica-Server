@@ -1063,19 +1063,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\grib\\.nuget\\packages\\": {}
+    "C:\\Users\\79214\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\grib\\RiderProjects\\Geometrica-Server\\Geometrica.Resources\\Geometrica.Resources.csproj",
+      "projectUniqueName": "C:\\Users\\79214\\RiderProjects\\Geometrica-Server\\Geometrica.Resources\\Geometrica.Resources.csproj",
       "projectName": "Geometrica.Resources",
-      "projectPath": "C:\\Users\\grib\\RiderProjects\\Geometrica-Server\\Geometrica.Resources\\Geometrica.Resources.csproj",
-      "packagesPath": "C:\\Users\\grib\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\grib\\RiderProjects\\Geometrica-Server\\Geometrica.Resources\\obj\\",
+      "projectPath": "C:\\Users\\79214\\RiderProjects\\Geometrica-Server\\Geometrica.Resources\\Geometrica.Resources.csproj",
+      "packagesPath": "C:\\Users\\79214\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\79214\\RiderProjects\\Geometrica-Server\\Geometrica.Resources\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\grib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\79214\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1089,8 +1089,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\grib\\RiderProjects\\Geometrica-Server\\Auth.Common\\Auth.Common.csproj": {
-              "projectPath": "C:\\Users\\grib\\RiderProjects\\Geometrica-Server\\Auth.Common\\Auth.Common.csproj"
+            "C:\\Users\\79214\\RiderProjects\\Geometrica-Server\\Auth.Common\\Auth.Common.csproj": {
+              "projectPath": "C:\\Users\\79214\\RiderProjects\\Geometrica-Server\\Auth.Common\\Auth.Common.csproj"
             }
           }
         }
@@ -1140,7 +1140,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -38,13 +38,19 @@ namespace Geometrica.Auth.Controllers
         [HttpPost("signIn")]
         public IActionResult SignIn([FromBody]User request)
         {
-            var user = repository.SignIn(request);
-            if (user is null) return Unauthorized();
-            var token = GenerateJWT(user);
+            var player = repository.SignIn(request);
+            if (player is null) return Unauthorized();
+            var token = GenerateJWT(player);
             return Ok(new
             {
-                access_token = token, user
+                access_token = token, player
             });
+        }
+        
+        [HttpGet("allPlayers")]
+        public IEnumerable<Player> GetPlayers()
+        {
+            return repository.GetPlayers();
         }
         
         private string GenerateJWT(Player player)
